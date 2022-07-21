@@ -4,7 +4,7 @@ header{
        top: 0;
 }
 .side {
-  width:100px;
+  width:170px;
   height:1000px;
   text-align:center;
   margin-left:10px;
@@ -22,6 +22,65 @@ article {
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+.cp_blockdesign07 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em;
+	background: #B3E5FC;
+}
+.cp_blockdesign07 .cp_authorname::before,
+.cp_blockdesign07 .cp_authorname::after {
+	position: absolute;
+	top: -7px;
+	left: -20px;
+	width: 110%;
+	height: 130%;
+	content: '';
+}
+.cp_blockdesign07 .cp_authorname::before{
+	top: 0px;
+	-webkit-transform: rotate(2.3deg);
+	        transform: rotate(2.3deg);
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	background: #4FC3F7;
+}
+.cp_blockdesign07 .cp_authorname::after{
+	-webkit-transform: rotate(-1.8deg);
+	        transform: rotate(-1.8deg);
+	-webkit-transform-origin: bottom left;
+	        transform-origin: bottom left;
+	background: #03A9F4;
+}
+.cp_blockdesign07 .cp_authorname {
+	position: relative;
+	display: flex;
+}
+.cp_blockdesign07 .cp_authorname h2 {
+	z-index: 1;
+	margin: 0.3em 0.3em 0.3em 0.8em;
+	width: 65%;
+	color: #ffffff;
+}
+.cp_blockdesign07 .cp_authorname ul {
+	z-index: 1;
+	margin: 0.5em 0;
+	padding: 0.3em 0 0.3em 0.8em;
+	width: 35%;
+	text-align: center;
+}
+.cp_blockdesign07 .cp_authorname li {
+	display: inline;
+	padding: 0 0.5em;
+}
+.cp_blockdesign07 .cp_authorname li a {
+	color: #ffffff;
+}
+.cp_blockdesign07 .cp_authorinfo {
+	padding: 1em 0.5em  0.5em  0.5em;
+	position: relative;
+	z-index: 1;
 }
 body {
 	/*設置する親要素ページ全体ならbodyなど*/
