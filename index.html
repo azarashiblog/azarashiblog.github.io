@@ -10,10 +10,12 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/share.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <!--JS-->
         <script src="js/date.js"></script>
         <script src="https://kit.fontawesome.com/e3be17948b.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
         <!--その他-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,6 +46,23 @@
                         <input type="hidden" name="hl" value="ja">
                         <input type="hidden" name="sitesearch" value="azarashiblog.github.io">
                   <p style="font-size: 20px;">新着記事</p>
+                  <center>
+                    <input type="button" id="push" onclick="return push()" value="クリックするとプッシュ通知が送られます">
+                   </center>
+                   <script>
+                    function push(){
+                     Push.create("更新情報", 
+                      {
+                       body: "ブログの更新をお知らせします!",
+                       icon: 'casley_logo.png',
+                       timeout: 8000,
+                       onClick: function () {
+                       window.focus(); 
+                       this.close();
+                       }
+                     })
+                   }
+                   </script>
                   <p></p>
                 </div>
             </article>
