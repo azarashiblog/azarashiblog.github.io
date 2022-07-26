@@ -45,24 +45,22 @@
                         <input type="submit" name="btng" value="ページ内検索">
                         <input type="hidden" name="hl" value="ja">
                         <input type="hidden" name="sitesearch" value="azarashiblog.github.io">
-                  <p style="font-size: 20px;">新着記事</p>
-                  <center>
+                    <p style="font-size: 20px;">新着記事</p>
                     <input type="button" id="push" onclick="return push()" value="クリックするとプッシュ通知が送られます">
-                   </center>
-                   <script>
+                    <script>
                     function push(){
-                     Push.create("更新情報", 
-                      {
-                       body: "ブログの更新をお知らせします!",
-                       icon: 'casley_logo.png',
-                       timeout: 8000,
-                       onClick: function () {
-                       window.focus(); 
-                       this.close();
-                       }
-                     })
-                   }
-                   </script>
+                        Push.create("更新情報", 
+                        {
+                            body: "ブログの更新をお知らせします!",
+                            icon: 'img/icon.png',
+                            timeout: 8000,
+                            onClick: function () {
+                                window.focus(); 
+                                this.close();
+                        }
+                        })
+                    }
+                    </script>
                   <p></p>
                 </div>
             </article>
